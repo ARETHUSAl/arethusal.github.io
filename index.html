@@ -1,31 +1,30 @@
-<!--1.根标签-->  
-<html>  
-   <!--2.头部-->  
-   <head>  
-       <!--放配置性的东西,外部引用的资源-->  
-       <!--头部内不可缺少的两个标签:-->  
-       <!--(1)标题标签-->  
-       <title>
-          惟忆卿颜的小本子
-       </title>  
-       <!--设置编码(语言)-->  
-       <meta charset="utf-8">  
-   </head>  
-   <!--3.主要内容-->  
-   <body>  
-<div>  
-    红黑 玲珑骰子安红豆：
-纯天然白色菩提子 + 纯天然红色相思豆 ×2
-日本金沙琉璃珠 ×2
-景泰蓝烧蓝配珠 ×2
-景泰蓝小蝴蝶   ×1（×2也行吧）
-镀金色配珠     ×4
-（扁平的金色小配件   ×10  非必须）
-红黑琉璃小配珠  各色×10
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | pal7_bg</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/t3.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+	  <audio controls="controls" loop="loop">
+  	<source src="https://raw.githubusercontent.com/ARETHUSAl/arethusal.github.io/master/%E8%BD%A9%E8%BE%95%E5%89%91%20-%20%E4%BA%98%E5%8F%A4%E7%9A%84%E6%80%9D%E5%BF%B5%E2%80%94%E4%BA%98%E5%8F%A4%E7%9A%84%E6%80%9D%E5%BF%B5.mp3" type="audio/mp3" />
+		Your browser does not support the audio element.
+	</audio>
 
-白色玉佩：
-≥8mm白色珠子 ×10
- 
-</div>  
-   </body>  
-</html> 
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">pal7_bg</div>
+      </div>
+    </div>
+  </body>
+</html>
