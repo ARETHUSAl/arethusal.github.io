@@ -1,0 +1,20 @@
+Title         : ThoughtWorks 2019
+Author        : 王乎
+Logo          : True
+
+[TITLE]
+
+# 运行方式 
+
+代码使用Visual Studio 2017编写，可以如下方式运行：
+
+* 直接点击ans.sln文件使用VS2017打开
+* 编译运行 
+
+其他方式
+
+* 如无法打开sln文件，可以直接打开ans文件夹下2019Q1.cpp
+* 编译运行
+
+Thanks!
+
